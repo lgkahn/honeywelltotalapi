@@ -87,7 +87,6 @@ metadata {
             state "auto", label:'${name}', action:"thermostat.fanAuto", icon: "st.Appliances.appliances11", backgroundColor: '#44b621'
             state "circulate", label:'${name}', action:"thermostat.fanCirculate", icon: "st.Appliances.appliances11", backgroundColor: '#44b621'
             state "on", label:'${name}', action:"thermostat.fanOn", icon: "st.Appliances.appliances11", backgroundColor: '#44b621'
-        
         }
 
         controlTile("coolSliderControl", "device.coolingSetpoint", "slider", height: 3, width: 1, inactiveLabel: false) {
@@ -554,9 +553,9 @@ def setThermostatFanMode(mode) {
       fanMode = 'auto'
     if(mode==1)
       fanMode = 'on'
-    if(mode==1)
+    if(mode==2)
       fanMode = 'circulate'
-
+   
   if(data.SetStatus==1)
   {
       sendEvent(name: 'thermostatFanMode', value: fanMode)    
