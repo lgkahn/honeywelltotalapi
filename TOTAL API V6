@@ -155,9 +155,9 @@ metadata {
         }
         
            standardTile("fanOperatingState", "device.fanOperatingState", inactiveLabel: false) {
-            state "On", label:'Fan: ${name}', backgroundColor : '#53a7c0'
-            state "Idle", label:'Fan: ${name}'
-            state "Unknown", label:'Fan: ${name}', backgroundColor : '#cc0000'
+            state "On", label:'${name}',icon: "st.Appliances.appliances11", backgroundColor : '#53a7c0'
+            state "Idle", label:'${name}',icon: "st.Appliances.appliances11"
+            state "Unknown", label:'${name}',icon: "st.Appliances.appliances11", backgroundColor : '#cc0000'
         }
         
         standardTile("refresh", "device.thermostatMode", inactiveLabel: false, decoration: "flat") {
