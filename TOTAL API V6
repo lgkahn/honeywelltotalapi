@@ -150,8 +150,8 @@ metadata {
         //tile added for operating state - Create the tiles for each possible state, look at other examples if you wish to change the icons here. 
         
         valueTile("thermostatOperatingState", "device.thermostatOperatingState", inactiveLabel: false) {
-            state "Heating", label:'${name}', backgroundColor : '#E14902', icon: "st.Weather.weather7"
-            state "Cooling", label:'${name}', backgroundColor : '#1e9cbb', icon: "st.Outdoor.outdoor19"
+            state "Heating", label:'${name}', backgroundColor : '#E14902', icon: "st.Weather.weather14"
+            state "Cooling", label:'${name}', backgroundColor : '#1e9cbb', icon: "st.Weather.weather7"
             state "Idle", label:'${name}'
             state "Unknown", label:'${name}', backgroundColor : '#cc0000'
         }
